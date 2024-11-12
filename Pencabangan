@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int golongan;
+
+    cout << "Masukkan Golongan: ";
+    cin >> golongan;
+
+    switch (golongan) {
+        case 1:
+            cout << "Jabatan: Senior Manager" << endl;
+            break;
+        case 2:
+            cout << "Jabatan: Manager" << endl;
+            break;
+        case 3:
+            cout << "Jabatan: Junior Manager" << endl;
+            break;
+        default:
+            cout << "Golongan tidak valid" << endl;
+    }
+
+    return 0;
+}
