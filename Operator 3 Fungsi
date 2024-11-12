@@ -1,0 +1,50 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int golongan;
+    int gajiPokok, tunjanganJabatan, gajiTotal;
+
+    cout << "Masukkan Golongan Pegawai: ";
+    cin >> golongan;
+
+    switch (golongan) {
+        case 1:
+            gajiPokok = 4000000;
+            tunjanganJabatan = 3000000;
+            break;
+        case 2:
+            gajiPokok = 3000000;
+            tunjanganJabatan = 2000000;
+            break;
+        case 3:
+            gajiPokok = 2500000;
+            tunjanganJabatan = 1500000;
+            break;
+        default:
+            cout << "Golongan tidak valid" << endl;
+            return 1; // Keluar dari program dengan kode kesalahan
+    }
+
+    gajiTotal = gajiPokok + tunjanganJabatan;
+
+    cout << "Jabatan: ";
+    switch (golongan) {
+        case 1:
+            cout << "Senior Manager" << endl;
+            break;
+        case 2:
+            cout << "Manager" << endl;
+            break;
+        case 3:
+            cout << "Junior Manager" << endl;
+            break;
+    }
+
+    cout << "Gaji Pokok: Rp " << gajiPokok << endl;
+    cout << "Tunjangan Jabatan: Rp " << tunjanganJabatan << endl;
+    cout << "Jumlah diterima: Rp " << gajiTotal << endl;
+
+    return 0;
+}
