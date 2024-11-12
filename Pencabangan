@@ -1,25 +1,16 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    int golongan;
+    int angka;
 
-    cout << "Masukkan Golongan: ";
-    cin >> golongan;
+    cout << "Masukkan suatu angka: ";
+    cin >> angka;
 
-    switch (golongan) {
-        case 1:
-            cout << "Jabatan: Senior Manager" << endl;
-            break;
-        case 2:
-            cout << "Jabatan: Manager" << endl;
-            break;
-        case 3:
-            cout << "Jabatan: Junior Manager" << endl;
-            break;
-        default:
-            cout << "Golongan tidak valid" << endl;
-    }
+    string hasil = (angka % 2 == 0) ? "genap" : "ganjil";
+
+    cout << "Angka " << angka << " merupakan bilangan " << hasil << endl;
 
     return 0;
 }
